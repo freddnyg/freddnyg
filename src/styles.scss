@@ -3,6 +3,7 @@
 $primary-color:#333;
 $secondary-color:#777;
 $accent-color: #ff4228;
+$text-color: #fff;
 
 * {
     box-sizing: border-box;
@@ -20,14 +21,14 @@ h1 {
   padding: 0;
   font-size: 5rem;
   font-weight: inherit;
-  color: #fff;
+  color: $text-color;
   margin: 0 2rem;
   transition: .5s;
   white-space: nowrap;
 }
 
 p {
-  color: #fff;
+  color: $text-color;
   line-height: 1.5;
 }
 
@@ -71,7 +72,7 @@ h3 {
 
       h2 {
           font-size: 2rem;
-          color: #fff;
+          color: $text-color;
           font-weight: 300;
           padding: 10px 0;
       }
@@ -97,8 +98,7 @@ nav {
 
     a {
       text-decoration: none;
-      color: #fff;
-      padding: 0 10px;
+      color: $text-color;
       transition: .8s;
 
       &:hover {
@@ -112,7 +112,7 @@ ol {
   padding-left: 1em;
 
   li {
-    color: #fff;
+    color: $text-color;
   }
 }
 
@@ -135,7 +135,7 @@ footer {
   grid-column: 3/4;
 
   a {
-    color: #fff;
+    color: $text-color;
     text-decoration: none;
     transition: .8s;
 
