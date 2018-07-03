@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
+$primary-color:#333;
+$secondary-color:#777;
 $accent-color: #ff4228;
 
 * {
@@ -9,9 +11,9 @@ $accent-color: #ff4228;
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  background: #333;
+  background: $primary-color;
 }
 
 h1 {
@@ -45,7 +47,7 @@ h3 {
     display: flex;
     align-items: center;
     padding-left: 30px;
-    background: linear-gradient(#333, #777);
+    background: linear-gradient($primary-color, $secondary-color);
 
     img {
         width: 150px;
@@ -53,24 +55,26 @@ h3 {
         clip-path: circle();
         filter: grayscale(70%);
         transition: .7s;
-      }
+    }
   }
   main {
     display: flex;
     justify-content: center;
-    background: linear-gradient(#777, #333);
+    background: linear-gradient($secondary-color, $primary-color);
     padding: 50px;
     padding-top: 0;
+
     section {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       h2 {
           font-size: 2rem;
           color: #fff;
           font-weight: 300;
           padding: 10px 0;
-        }
+      }
     }
   }
 }
@@ -79,52 +83,36 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #777;
+  background: $secondary-color;
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
 
   ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      list-style: none;
-      width: 100%;
-      padding: 10px 0;
-      a {
-          text-decoration: none;
-          color: #fff;
-          padding: 0 10px;
-          transition: .8s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    padding: 10px 0;
 
-          &:hover {
-              color: $accent-color;
-            }
-        }
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0 10px;
+      transition: .8s;
+
+      &:hover {
+          color: $accent-color;
+      }
     }
+  }
 }
 
 ol {
   padding-left: 1em;
+
   li {
     color: #fff;
-  }
-
-}
-.card {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  width: 50%;
-  background: #888;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #333;
-  .card-text {
-    color: #333;
-  }
-  .card-img-top {
-    width: 100%;
-    margin-bottom: 20px;
   }
 }
 
@@ -133,7 +121,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 10px;
-  background: #333;
+  background: $primary-color;
   border-top: 1px solid $accent-color;
 }
 
@@ -145,10 +133,12 @@ footer {
 .social-icons {
   text-align: center;
   grid-column: 3/4;
+
   a {
     color: #fff;
     text-decoration: none;
     transition: .8s;
+
     &:hover {
       color: $accent-color;
     }
@@ -158,12 +148,14 @@ footer {
 i {
   padding: 0 10px;
 }
+
 .sticky {
   position: fixed;
   top: 0;
   width: inherit;
   transition: .5s;
 }
+
 .sticky + main {
   padding-top: 60px;
 }
@@ -172,12 +164,12 @@ i {
   box-shadow: 0 3px 3px -2px $accent-color;
 }
 
-
 @media (max-width: 1034px) {
   h1 {
     font-size: 4rem;
   }
 }
+
 @media (max-width: 850px) {
   h1 {
     font-size: 3rem;
@@ -193,6 +185,7 @@ i {
     margin: 0;
   }
 }
+
 @media (max-width: 700px) {
   h1 {
     font-size: 2rem;
@@ -206,8 +199,5 @@ i {
     width: 100%;
     box-shadow: none;
     margin: 0;
-  }
-  .card {
-    width: 100%;
   }
 }
