@@ -10,6 +10,18 @@ html, body {
 .jumbotron {
   margin-bottom: 0;
   border-radius: 0;
+  padding: 1rem;
+}
+
+.container {
+  box-shadow: $box-shadow;
+}
+
+.navbar {
+  border-bottom: 1px solid lighten($primary-color, 30%);
+  .nav-link {
+    padding: 0;
+  }
 }
 
 .bg-default {
@@ -17,11 +29,8 @@ html, body {
 }
   
   main {
-    display: flex;
-    justify-content: center;
     background: linear-gradient($secondary-color, $primary-color);
-    padding: 50px;
-    padding-top: 0;
+    padding: 1rem;
 
     section {
       display: flex;
@@ -38,18 +47,16 @@ html, body {
   }
 
 header {
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
   background: linear-gradient($primary-color, $secondary-color);
 
   img {
-      width: 150px;
+      width: 100%;
+      max-width: 150px;
       filter: grayscale(70%);
       transition: .7s;
-      border: 2px solid #fff;
-      border-radius: 2px;
-      margin: 5px;
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      box-shadow: $box-shadow;
   }
 }
 
@@ -92,17 +99,6 @@ footer {
 
 i {
   padding: 0 10px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: inherit;
-  transition: .5s;
-}
-
-.sticky + main {
-  padding-top: 60px;
 }
 
 .active {
