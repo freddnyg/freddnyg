@@ -16,12 +16,10 @@
             <h2>Freddy Nygård</h2>
           </div>
         </div>
-        <!-- <div class="w3-bar w3-ultra-violet">
-          <a class="w3-bar-item w3-button" href="#">Hjem</a>
-          <a class="w3-bar-item w3-button" href="#">Om meg</a>
-          <a class="w3-bar-item w3-button" href="#">Mine fag</a>
-          <a class="w3-bar-item w3-button" href="#">Ref</a>
-        </div> -->
+        <div class="w3-bar w3-ultra-violet">
+          <router-link class="w3-bar-item w3-button" to="/">Home</router-link>
+          <router-link class="w3-bar-item w3-button" to="/about">About</router-link>
+        </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-ultra-violet"></i>Ingeniør</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-ultra-violet"></i>Bodø, Norway</p>
@@ -77,7 +75,12 @@
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-ultra-violet"></i>Arbeidserfaring</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Ingeniør / Rapp Bomek as</b></h5>
-          <h6 class="w3-text-ultra-violet"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mai 2012 - <span class="w3-tag w3-ultra-violet w3-round">Current</span></h6>
+          <h6 class="w3-text-ultra-violet"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mai 2012 - <span id="wave">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </span>
+          </h6>
           <p>Rapp Bomek er global leder innen design, utvikling og produksjon av avanserte sikkerhetsløsninger for dør-, vindu- og veggsystemer til energi-, sivil- og forsvarsmarkedet, verden over.</p>
           <p>Produsere og levere dokumentasjon til kunde etter kundens spesifikasjoner. <p>Produsere og levere produksjonsunderlag for dører til eget verksted.</p> <p>Oppdatere og vedlikeholde «Mastermodeller» slik at disse til enhver tid er oppdatert i henhold
             til siste design.</p> <p>Deltar i designutvikling.</p> <p>Har det siste året hatt en nøkkelrolle i et utviklingsprosjekt der en «rød tråd» fra marked til leveranse er temaet. Dette innebærer salgskonfigurator der dører konfigureres ut fra kundens spesifikasjoner. Dataene som blir tastet inn her blir brukt videre i hele prosessen til døren er levert(stykkliste genereres, datautvekslingsfil til 3d-modelleringsprogram genereres, skjærefile, GA-tegninger, ruter blir generert, diverse dokumentasjon som SPIR, cert. of comp. mm). Fungerer også som support for Autodesk produktene Inventor, AutoCad og Vault.</p>
